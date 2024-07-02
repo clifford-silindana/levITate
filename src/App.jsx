@@ -4,7 +4,6 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 //page import
 import Login from './pages/Login';
 
-
 //component imports
 
 
@@ -17,8 +16,8 @@ function App() {
             <Routes>
       
               <Route path = "" element = {< Login />} >
-                  <Route path="certify/" element={<CertifyPage />} />
-                  <Route path="data-daily/" element={<DataDailyPage />} />
+                  <Route path="certify/" element={<Login />} />
+                  <Route path="data-daily/" element={<Login />} />
               </Route>
 
             </Routes>
