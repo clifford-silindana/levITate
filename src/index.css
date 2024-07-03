@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --body-background: black;
+    --body-background: #040452;
     --root-margin-top: 20px;
 
     /* layput width */
@@ -15,10 +15,10 @@
     --desktop-width: 95%;
     --wide-screen-width: 95%;
 
-    --mobile-background: black;
-    --tablet-background: black;
-    --desktop-background: black;
-    --wide-screen-background: black;
+    --mobile-background: var(--body-background);
+    --tablet-background: var(--body-background);
+    --desktop-background: var(--body-background);
+    --wide-screen-background: var(--body-background);
 
     /* navigation font */
     --navigation-font-size: 6rem;
