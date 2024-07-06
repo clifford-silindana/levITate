@@ -13,6 +13,7 @@ const Login = () => {
         left-0
         w-full
         h-full
+        bg-bodyBackgroundColor
       
     `}>
     <div className = {`
@@ -60,8 +61,8 @@ const Login = () => {
                 mx-auto
                 `}>
 
-            <input className = {`w-full h-12 bg-blue-950 p-7 my-5 text-white text-center`}type="text" placeholder = "email address"/>
-            <input className = {`w-full h-12 bg-blue-950 p-7 my-5 text-white text-center`}type="password" placeholder = "password" />
+            <input className = {`w-full h-12 bg-bodyBackgroundColor p-7 my-5 text-white text-center`}type="text" placeholder = "email address"/>
+            <input className = {`w-full h-12 bg-bodyBackgroundColor p-7 my-5 text-white text-center`}type="password" placeholder = "password" />
 
             <Link className = {`
             bg-blue-900
@@ -71,7 +72,7 @@ const Login = () => {
             group
             `}
             
-            to = "#">
+            to = "/home">
             <button className = {`w-1/3 my-5 mx-auto text-white group-hover:text-blue-900`}type = "submit">
                  <h1>Log in</h1>
             </button>
