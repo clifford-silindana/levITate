@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --body-background: #040452;
+    --body-background-color: linear-gradient(
+      45deg,
+      #040452 30%,
+      #6a0dad 55%,
+      #850756 90%
+    );
+
     --root-margin-top: 20px;
 
     /* layput width */
@@ -43,7 +51,7 @@
       1rem,
       var(--tablet-header-max-font-size)
     );
-    --header-font-family: "Poppins", sans-serif;
+    --header-font-family: "Space Grotesk", sans-serif;
     --header-font-style: normal;
     --header-font-weight: 700;
     --header-font-color: white;
@@ -242,8 +250,8 @@
     /* logo sizes */
     --mobile-logo-size: 100px;
     --tablet-logo-size: 70px;
-    --desktop-logo-size: 120px;
-    --wide-screen-logo-size: 100px;
+    --desktop-logo-size: 210px;
+    --wide-screen-logo-size: 220px;
 
     /* border */
     --border-width: 1px;
@@ -283,9 +291,10 @@
     overflow-x: hidden;
 
     position: relative;
-    background: var(--body-background);
+    background: var(--body-background-color);
     display: flex;
     justify-content: center;
+    font-family: "Space Grotesk", sans-serif;
   }
 
   #root {
@@ -293,6 +302,38 @@
     min-height: 100%;
     position: relative;
     margin: 0 auto;
+  }
+
+  .text-stroke-1 {
+    color: transparent;
+    -webkit-text-stroke: 1px purple;
+    text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  .text-stroke-2 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  .text-stroke-3 {
+    color: transparent;
+    -webkit-text-stroke: 1px skyblue;
+    text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  .text-stroke-4 {
+    color: transparent;
+    -webkit-text-stroke: 1px #db2777;
+    text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
   }
 
   .button {
