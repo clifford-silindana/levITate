@@ -25,6 +25,7 @@ module.exports = {
 
     extend: {
       colors: {
+        bodyBackgroundColor: "var(--body-background-color)",
         mobileBackgroundColor: "var(--mobile-background)",
         tabletBackground: "var(--tablet-background)",
         navigationItemBackgroundColor: "var(--navigation-item-background-color)",
