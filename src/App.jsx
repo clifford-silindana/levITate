@@ -3,6 +3,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 //page import
 import Login from './pages/Login';
+import Landing from './pages/Landing';
+import Home from './pages/Home';
+import AllMyTickets from './pages/AllMyTickets';
 
 //component imports
 
@@ -14,10 +17,13 @@ function App() {
           <BrowserRouter>
 
             <Routes>
+
+              <Route path="" element={<Landing />} />
+              <Route path="login" element={<Login />} />
       
-              <Route path = "" element = {< Login />} >
-                  <Route path="certify/" element={<Login />} />
-                  <Route path="data-daily/" element={<Login />} />
+              <Route path = "home" element = {< Home />} >
+                  <Route path="" element={<AllMyTickets />} />
+                  <Route path="new-ticket/" element={<Login />} />
               </Route>
 
             </Routes>
