@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
 import AllMyTickets from './pages/AllMyTickets';
+import CreateTicket from './pages/CreateTicket';
 
 //component imports
 
@@ -21,9 +22,9 @@ function App() {
               <Route path="" element={<Landing />} />
               <Route path="login" element={<Login />} />
       
-              <Route path = "home" element = {< Home />} >
+              <Route path = "tickets/" element = {< Home />} >
                   <Route path="" element={<AllMyTickets />} />
-                  <Route path="new-ticket/" element={<Login />} />
+                  <Route path="new-ticket/" element={<CreateTicket />} />
               </Route>
 
             </Routes>
