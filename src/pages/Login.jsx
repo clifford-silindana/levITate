@@ -72,7 +72,7 @@ const Login = () => {
             group
             `}
             
-            to = "/home">
+            to = "/tickets">
             <button className = {`w-1/3 my-5 mx-auto text-white group-hover:text-blue-900`}type = "submit">
                  <h1>Log in</h1>
             </button>
