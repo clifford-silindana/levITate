@@ -42,6 +42,7 @@ const InnerNavigation = () => {
     <div
     ref={navRef} 
     className = {`
+    bg-bodyBackgroundColor
     w-navigationWidth 
     mobile:h-mobileNavigationHeight
     mobile:px-mobileNavigationXPadding
@@ -54,12 +55,14 @@ const InnerNavigation = () => {
     fixed top-0 left-0
     padding-10 
     flex justify-between items-center
-    z-50`}>
+    z-100`}>
+      <Link to = {``}>
         <img className = {`mobile:w-mobileLogoSize
         tablet:w-tabletLogoSize
         desktop:w-desktopLogoSize
         wideScreen:w-wideScreenLogoSize`} 
         src={levitatelogo}  alt="" />
+        </Link>
 
         {/* <h1 className = "text-white">Navigation height is {navHeight}</h1> */}
 
@@ -67,12 +70,12 @@ const InnerNavigation = () => {
         <div id = {active} className={`${active ? 'nav__menu nav__active' : 'nav__menu'} flex justify-between mr-10`}>
         {/* <NavigationItem to = "certify/" navigationText = "CERTIFY" icon = {hamburgermenu} />
         <NavigationItem to = "data-daily/" navigationText = "DATA DAILY" icon = {levitatelogo} /> */}
-          <Link className = "px-7 py-3 mr-5 border border-white hover:scale-105 group" to = {`/new-ticket/`}>
+          <Link className = "px-7 py-3 mr-5 border border-white hover:scale-105 group" to = {``}>
             <h1 className = {`text-white
                         group-hover:scale-105`}>All tickets</h1>
         </Link>
 
-        <Link className = "px-7 py-3 mr-5 border border-white hover:scale-105 group" to = {`/new-ticket/`}>
+        <Link className = "px-7 py-3 mr-5 border border-white hover:scale-105 group" to = {`new-ticket`}>
             <h1 className = {`text-white
                         group-hover:scale-105`}>New ticket</h1>
         </Link>
