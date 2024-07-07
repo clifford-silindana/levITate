@@ -86,7 +86,7 @@ const InnerNavigation = () => {
         </Link>
         </div>
 
-<Link to = {`profile/`}>
+<Link to = {`/profile`}>
 
 <div className = "w-24 h-24 rounded-full overflow-hidden bg-gray-800 text-white  flex items-center justify-center mr-10">
     <img src= {profilepicture} className = "w-full h-full object-cover rounded-full" alt="" />
