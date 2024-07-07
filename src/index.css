@@ -336,6 +336,18 @@
     font-smoothing: antialiased;
   }
 
+  .form-display-true {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear;
+  }
+
+  .form-display-false {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.3s linear;
+  }
+
   .button {
     background: black;
     color: white;
